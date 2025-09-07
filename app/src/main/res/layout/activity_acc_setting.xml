@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+    android:gravity="center"
+    tools:context=".AccSettingActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="390dp"
+        android:layout_height="720dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="650dp"
+                android:paddingTop="20dp"
+                android:text="Account Settings"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="69dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageViewProfile"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/ssqquarejims"
+                    android:scaleType="centerCrop"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageViewCamera"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="120dp"
+                    android:src="@drawable/camera"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/firstname"
+                android:background="@drawable/round_crnr"
+                android:layout_width="279dp"
+                android:layout_height="54dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="293dp"
+                android:layout_marginEnd="43dp"
+                android:layout_marginBottom="372dp"
+                android:hint="First Name"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/surname"
+                android:background="@drawable/round_crnr"
+                android:layout_width="279dp"
+                android:layout_height="54dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="352dp"
+                android:layout_marginEnd="44dp"
+                android:layout_marginBottom="313dp"
+                android:hint="Last Name"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="103dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="225dp"
+                android:layout_marginEnd="266dp"
+                android:layout_marginBottom="445dp"
+                android:text="Name"
+                android:textColor="#FF9800"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="73dp"
+                android:layout_height="44dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="409dp"
+                android:layout_marginEnd="299dp"
+                android:layout_marginBottom="267dp"
+                android:text="Email"
+                android:textColor="#FF9800"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/email"
+                android:background="@drawable/round_crnr"
+                android:layout_width="279dp"
+                android:layout_height="54dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="459dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginBottom="207dp"
+                android:hint="Email Address"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="155dp"
+                android:layout_height="36dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="521dp"
+                android:layout_marginEnd="213dp"
+                android:layout_marginBottom="163dp"
+                android:text="Home Address"
+                android:textColor="#FF9800"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/address"
+                android:background="@drawable/round_crnr"
+                android:layout_width="279dp"
+                android:layout_height="54dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="568dp"
+                android:layout_marginEnd="46dp"
+                android:layout_marginBottom="98dp"
+                android:hint="Home Address"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="69dp"
+                android:layout_marginTop="640dp"
+                android:layout_marginEnd="233dp"
+                android:layout_marginBottom="38dp"
+                android:background="#FFFFFF"
+                android:padding="8dp"
+                android:text="Cancel"
+                android:textColor="#FF9800"
+
+                />
+
+            <Button
+                android:id="@+id/update"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="229dp"
+                android:layout_marginTop="640dp"
+                android:layout_marginEnd="73dp"
+                android:layout_marginBottom="38dp"
+
+                android:background="#FF9800"
+                android:padding="8dp"
+                android:text="Update"
+                android:textColor="#FFFF" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

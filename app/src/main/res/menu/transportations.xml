@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/jeeps"
+        android:icon="@drawable/jeepney"
+        android:title="Jeeps"
+        />
+    <item
+        android:id="@+id/trikes"
+        android:icon="@drawable/tricycle"
+        android:title="Trikes"/>
+    <item
+        android:id="@+id/trains"
+        android:icon="@drawable/train"
+        android:title="Trains"/>
+
+</menu>

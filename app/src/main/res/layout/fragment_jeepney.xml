@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal|bottom"
+    tools:context=".JeepneyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <fragment
+        android:id="@+id/list_cont"
+        android:layout_width="match_parent"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:navGraph="@navigation/ptv_nav"
+        app:defaultNavHost="true"
+        android:layout_height="300dp"
+        android:layout_above="@+id/ptvNav"
+        />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/ptvNav"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:menu="@menu/transportations"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selectorbg"
+        app:labelVisibilityMode="unlabeled"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

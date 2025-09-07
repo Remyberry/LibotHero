@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/expand"
+        android:icon="@drawable/expand_button"
+        android:title="@string/expand"/>
+    <item
+        android:id="@+id/jeeps"
+        android:icon="@drawable/jeepney"
+        android:title="@string/routes">
+    </item>
+    <item
+        android:id="@+id/dashbord"
+        android:icon="@drawable/user_nocrcl"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/nearby"
+        android:icon="@drawable/walking"
+        android:title="@string/nearby"/>
+    <item
+        android:id="@+id/favorites"
+        android:icon="@drawable/favorite"
+        android:title="@string/favorites"/>
+</menu>

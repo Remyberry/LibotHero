@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal|bottom"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FavDialogFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <fragment
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:navGraph="@navigation/favorites_nav"
+        app:defaultNavHost="true"
+        android:layout_height="300dp"
+        android:layout_above="@+id/favNav"
+        />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/favNav"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:menu="@menu/favselecttionmenu"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selectorbg"
+        app:labelVisibilityMode="unlabeled"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

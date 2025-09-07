@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ptv_nav"
+    app:startDestination="@id/jeepsfrag">
+    <fragment
+        android:id="@+id/jeepsfrag"
+        android:name="com.example.libothero.JeepListFragment"
+        android:label="Jeeps"
+        tools:layout="@layout/fragment_jeep_list" />
+    <fragment
+        android:id="@+id/trikesfrag"
+        android:name="com.example.libothero.TrikeListFragment"
+        android:label="Trikes"
+        tools:layout="@layout/fragment_trike_list" />
+    <fragment
+        android:id="@+id/trainsfrag"
+        android:name="com.example.libothero.ListViewFragment"
+        android:label="Trains"
+        tools:layout="@layout/fragment_list_view" />
+    <action
+        android:id="@+id/toTrike"
+        app:destination="@id/trikesfrag"
+        app:popUpTo="@id/trikesfrag"
+        app:popUpToInclusive="true"/>
+    <action
+        android:id="@+id/toTrain"
+        app:destination="@id/trainsfrag"
+        app:popUpTo="@id/trainsfrag"
+        app:popUpToInclusive="true"/>
+    <action
+        android:id="@+id/toJeep"
+        app:destination="@id/jeepsfrag"
+        app:popUpTo="@id/jeepsfrag"
+        app:popUpToInclusive="true"/>
+
+</navigation>
